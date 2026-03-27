@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SonrieFeliz Clínica Dental</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar scrolled" id="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-text">SonrieFeliz</span>
+        </a>
+        <div class="nav-wrapper">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Tratamientos</a>
+                <a href="equipo.html">Especialistas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <a href="https://wa.me/51993138263?text=Hola,%20deseo%20agendar%20una%20consulta." class="btn btn-solid">Cita Privada</a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-bg">
+            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2070&auto=format&fit=crop" alt="">
+        </div>
+        <div class="page-header-content container">
+            <span class="split-label">Contacto</span>
+            <h1 class="font-display">Reserva tu <span class="italic text-gold">Consulta</span></h1>
+            <p class="header-subtitle">Déjanos tus datos y nos pondremos en contacto contigo a la brevedad.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="split-section" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div class="split-content reveal">
+                    <span class="split-label">Escríbenos</span>
+                    <h2 class="font-display">Tu Nueva Sonrisa <br><span class="italic text-gold">Te Espera</span></h2>
+                    <p>Completa el formulario y nous pondremos en contacto para coordinar tu evaluación privada y personalizada.</p>
+                    
+                    <form action="https://formspree.io/f/mwvwpdon" method="POST" style="margin-top: 1rem;" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Nombre Completo</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label class="form-label">Correo Electrónico</label>
+                                <input type="email" name="email" class="form-control" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Teléfono</label>
+                                <input type="tel" name="telefono" class="form-control" placeholder="+51 993 138 263" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Tratamiento de Interés</label>
+                            <select name="tratamiento" class="form-control">
+                                <option value="">Selecciona un tratamiento</option>
+                                <option value="carillas">Carillas Élite</option>
+                                <option value="ortodoncia">Ortodoncia Invisible</option>
+                                <option value="implantes">Implantes</option>
+                                <option value="blanqueamiento">Blanqueamiento</option>
+                                <option value="diseno">Diseño Digital de Sonrisa</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mensaje</label>
+                            <textarea name="mensaje" class="form-control" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-solid" style="width: 100%;">Enviar Solicitud</button>
+                        <div id="formSuccess" style="display: none; text-align: center; margin-top: 1.5rem; padding: 1rem; background: #d4edda; border-radius: 8px; color: #155724;">
+                            <i class="ri-check-line"></i> ¡Gracias! Tu mensaje ha sido enviado. Te contactaremos pronto.
+                        </div>
+                        <div style="text-align: center; margin-top: 1.5rem;">
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">o</span>
+                        </div>
+                        <a href="https://wa.me/51993138263?text=Hola,%20deseo%20agendar%20una%20consulta." class="btn" style="width: 100%; background: #25D366; border-color: #25D366; color: white; justify-content: center;">
+                            <i class="ri-whatsapp-line"></i> Escribir por WhatsApp
+                        </a>
+                    </form>
+                </div>
+                
+                <div class="reveal reveal-delay-1 contacto-mapa">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Piura+Smile+Care+Piura+Peru" target="_blank" rel="noopener" style="text-decoration: none;">
+                        <div class="mapa-box" style="position: relative; border: 6px solid var(--primary-dark); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);">
+                            <img src="mapa.png" alt="Ubicación de la clínica" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                            <div class="mapa-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 2rem 1rem 1rem;">
+                                <p style="color: white; font-size: 0.9rem; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                                    <i class="ri-map-pin-2-fill" style="color: var(--accent);"></i>
+                                    Ver en Google Maps
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="horario-box" style="background: var(--white); padding: 1.5rem; border: 1px solid var(--bg-secondary); border-radius: 12px; margin-top: 1rem;">
+                        <h4 style="font-family: var(--font-body); font-size: 1rem; font-weight: 500; margin-bottom: 0.5rem; text-transform: none; letter-spacing: 0;">Horario de Atención</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.3rem;">Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.3rem;">Sábados: 9:00 AM - 2:00 PM</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Domingos: Cerrado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">SonrieFeliz</span>
+                    </a>
+                    <p>El nuevo estándar en estética dental y cuidado oral avanzado. Donde cada sonrisa es una obra de arte.</p>
+                    <div style="margin-top: 1.5rem;">
+                        <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; font-weight: 500; margin-bottom: 0.5rem;">
+                            <i class="ri-phone-fill" style="color: var(--accent); margin-right: 0.5rem;"></i>+51 993 138 263
+                        </p>
+                        <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; font-weight: 500; margin-bottom: 0.5rem;">
+                            <i class="ri-mail-fill" style="color: var(--accent); margin-right: 0.5rem;"></i>hola@excelencia.dental
+                        </p>
+                        <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; font-weight: 500;">
+                            <i class="ri-map-pin-fill" style="color: var(--accent); margin-right: 0.5rem;"></i>Piura, Perú
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="privacidad.html">Términos y Condiciones</a></li>
+                        <li><a href="privacidad.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ubicación</h4>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Piura+Smile+Care+Piura+Peru" target="_blank" style="display: block; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.3); margin-bottom: 1rem;">
+                        <img src="mapa.png" alt="Mapa de ubicación" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+                    </a>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem;">Lunes a Viernes: 9:00 AM - 7:00 PM<br>Sábados: 9:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 SonrieFeliz. Todos los derechos reservados.</span>
+                <div class="footer-social">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
